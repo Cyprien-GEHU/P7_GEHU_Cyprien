@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<!-- La partie titre du site-->    
+<header>
+	<meta charset="utf-8">
+	<title>Groupomania</title>
+</header>
+<!-- Partie connexion ou création du site -->
+<head>
+    <ul id="user">
+        <li v-for="(user, key) in test" :key="key">
+            {{ user }}
+        </li>
+    </ul>
+</head>
+
+<!--Partie formulaire du site-->
+<body>
+	<main id="formulaire">
+        <ul>
+        <label for="email">email</label>
+        <input type="text" v-model="email">
+        <div v-if="email">
+            email : {{email}}
+        </div>
+        </ul>
+
+        <ul>
+        <label for="password">password</label>
+        <input type="text" v-model="password">
+        <div v-if="password">
+            password : {{password}}
+        </div>
+        </ul>
+
+        <div id="bouton">
+            <button>Bouton</button>
+        </div>
+	</main>
+
+    <!-- Mise en place des inforamtion avec vue -->
+	<script src="https://unpkg.com/vue@next"></script>
+	<script>
+        //raccourcie des bouttons
+		const user = Vue.createApp({
+			data () {
+				return {
+					test:["Signup", 'Login']
+				}
+			}
+		}).mount('#user');
+
+        //formulaire
+        const formu = {
+            data (){
+                return {
+                    email :'',
+                    password:''
+                }
+            }
+        };
+        const formulaire = Vue.createApp(formu).mount("#formulaire");
+
+
+	</script>
+</body>
+</html>
