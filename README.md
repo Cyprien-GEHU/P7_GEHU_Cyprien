@@ -29,5 +29,6 @@ mettre en place le front-end et le back-end
   
   * Dernier point important, dans le programme vous devez changer une ligne de code  (dans "back" puis "app.js" à la ligne 11):
   mongoose.connect('mongodb+srv://dragon:sonic1234@cluster0.dtsg5.mongodb.net/?retryWrites=true&w=majority',
+  
   changer dragon avec votre nom utilisateur 
   et changer sonic1234 avec le mot de passe de utilisateur de la base de donnée
