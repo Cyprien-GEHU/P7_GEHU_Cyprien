@@ -27,7 +27,7 @@ mettre en place le front-end et le back-end
   
   * Quand la connexion s'effectue bien avec mongodb compass vous aller dans une collection puis dans les option en haut du logiciel vous faites "collection" puis import data, vous prenez le fichier qui correspond a la collection puis vous choisissez "JSON" puis vous faites pareil pour votre base donnée
   
-  * Dernier point important, dans le programme vous devez changer une ligne de code  (dans "back" puis "app.js" à la ligne 11):
+  * Dernier point important, dans le programme vous devez changer une ligne de code (dans la partie "back" puis "app.js" à la ligne 11):
   mongoose.connect('mongodb+srv://dragon:sonic1234@cluster0.dtsg5.mongodb.net/?retryWrites=true&w=majority',
   
   changer dragon avec votre nom utilisateur 
